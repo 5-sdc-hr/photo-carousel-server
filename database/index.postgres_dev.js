@@ -1,4 +1,4 @@
-const Client = require('pg-native');
+
 const pgp = require('pg-promise')();
 
 
