@@ -2,7 +2,7 @@
 const pgp = require('pg-promise')();
 
 
-const config = require('./config.js');
+//const config = require('./config.js');
 
 var conString = "postgres://lindentree:margarita@localhost:5432/lindentree";
 var db = pgp(conString);
