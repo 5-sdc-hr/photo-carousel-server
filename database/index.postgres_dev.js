@@ -4,7 +4,7 @@ const pgp = require('pg-promise')();
 
 //const config = require('./config.js');
 
-var conString = "postgres://lindentree:margarita@ec2-54-144-184-0.compute-1.amazonaws.com:5432/lindentree";
+var conString = "postgres://lindentree:margarita@ec2-52-87-161-49.compute-1.amazonaws.com:5432/sdc";
 var db = pgp(conString);
 // let db = pgp(config);
 

@@ -32,3 +32,9 @@ CREATE TABLE restaurants (
  name text NOT NULL,
  phototags json NOT NULL
 );
+
+
+CREATE TABLE restaurants (
+ ID integer NOT NULL PRIMARY KEY,
+ phototags json NOT NULL
+);
