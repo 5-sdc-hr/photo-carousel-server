@@ -24,4 +24,11 @@ CREATE TABLE restaurants_perf (
  phototags json NOT NULL
 );
 
+
 \COPY restaurants_perf FROM './postgres_data/postgres_data1.csv' DELIMITERS '|' CSV;
+
+CREATE TABLE restaurants (
+ ID integer NOT NULL PRIMARY KEY,
+ name text NOT NULL,
+ phototags json NOT NULL
+);

@@ -4,7 +4,7 @@ const pgp = require('pg-promise')();
 
 //const config = require('./config.js');
 
-var conString = "postgres://lindentree:margarita@localhost:5432/lindentree";
+var conString = "postgres://lindentree:margarita@ec2-54-144-184-0.compute-1.amazonaws.com:5432/lindentree";
 var db = pgp(conString);
 // let db = pgp(config);
 
@@ -14,7 +14,7 @@ var db = pgp(conString);
 const getRestaurantInfo = (restaurantID, callback) => {
   //let id = restaurantID.toString()
   //console.log("query", restaurantID)
-  db.query(`SELECT * FROM restaurants_perf WHERE ID = ${restaurantID}`)
+  db.query(`SELECT * FROM restaurants WHERE ID = ${restaurantID}`)
    .then((results) => callback(null, results))
    .catch(err => callback(err));
 }
