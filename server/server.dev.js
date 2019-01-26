@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use('/restaurants/:id/', express.static(`${__dirname}/../client/dist`));
-//app.use('/restaurants/:id', express.static('client/dist/'));
+app.use('/', express.static(`${__dirname}/../public`));
 app.use(cors());
 
 //get all photos associated with that restaurant
